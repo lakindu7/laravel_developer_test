@@ -1,5 +1,6 @@
 {
     "SuperAdmin": true,
     "BusOwner": true,
-    "User": true
+    "User": true,
+    "Bus": true
 }
