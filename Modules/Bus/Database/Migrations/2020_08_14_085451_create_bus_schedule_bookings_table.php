@@ -24,6 +24,7 @@ class CreateBusScheduleBookingsTable extends Migration
             $table->string('seat_number');
             $table->double('price');
             $table->string('status')->default('active');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

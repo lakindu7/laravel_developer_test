@@ -20,6 +20,7 @@ class CreateBusRoutesTable extends Migration
             $table->unsignedBigInteger('route_id');
             $table->foreign('route_id')->references('id')->on('routes');
             $table->string('status')->default('active');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

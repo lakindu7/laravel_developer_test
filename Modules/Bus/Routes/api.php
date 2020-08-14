@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/bus', function (Request $request) {
     return $request->user();
 });
+
+Route::resources([
+    'buses' => 'BusController',
+]);

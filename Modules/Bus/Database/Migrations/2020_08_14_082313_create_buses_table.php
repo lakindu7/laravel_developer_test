@@ -17,9 +17,10 @@ class CreateBusesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('type');
-            $table->string('vehical_number')->unique();
+            $table->string('vehicle_number')->unique();
             $table->unsignedBigInteger('owner_id');
             $table->foreign('owner_id')->references('id')->on('bus_owners');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
