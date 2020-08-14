@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BusRoute extends Model
 {
-    protected $fillable = [];
+    protected $fillable = [
+        'bus_id', 'route_id', 'status'
+    ];
 }

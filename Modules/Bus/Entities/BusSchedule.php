@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BusSchedule extends Model
 {
-    protected $fillable = [];
+    protected $fillable = [
+        'direction', 'start_timestamp', 'end_timestamp', 'bus_route_id'
+    ];
 }
