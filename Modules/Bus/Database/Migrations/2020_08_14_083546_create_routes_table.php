@@ -20,6 +20,7 @@ class CreateRoutesTable extends Migration
             $table->string('route_number');
             $table->double('distance');
             $table->string('time');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

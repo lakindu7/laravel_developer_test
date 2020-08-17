@@ -2,19 +2,24 @@
 
 namespace Modules\Bus\Http\Controllers;
 
+use App\Http\Resources\ReturnResourceCollection;
+use App\Http\Resources\ReturnResource;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Bus\Entities\Bus;
+use Modules\Bus\Http\Requests\BusStoreRequest;
+use Modules\Bus\Http\Requests\BusUpdateRequest;
 
 class BusController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * @return Renderable
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
-        return view('bus::index');
+        return response()->json(new ReturnResourceCollection(Bus::paginate(5)),200);
     }
 
     /**
@@ -31,9 +36,10 @@ class BusController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function store(BusStoreRequest $request)
     {
-        //
+        return response()->json(new ReturnResource(Bus::create($request->validated())),201);
+
     }
 
     /**
@@ -43,7 +49,12 @@ class BusController extends Controller
      */
     public function show($id)
     {
-        return view('bus::show');
+        $bus = Bus::find($id);
+
+        if($bus){
+            return response()->json(new ReturnResource($bus),200);
+        }
+            return response()->json(['error'=>'Record not found'],404);
     }
 
     /**
@@ -62,9 +73,14 @@ class BusController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(BusUpdateRequest $request, $id)
     {
-        //
+        $bus = Bus::find($id);
+
+        if($bus){
+            return response()->json($bus->update($request->validated()),200);
+        }
+        return response()->json(['error'=>'Record not found'],404);
     }
 
     /**

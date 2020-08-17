@@ -3,9 +3,11 @@
 namespace Modules\BusOwner\Entities;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class BusOwner extends Model
 {
+    use SoftDeletes;
     protected $fillable = [
         'name', 'email', 'password'
     ];

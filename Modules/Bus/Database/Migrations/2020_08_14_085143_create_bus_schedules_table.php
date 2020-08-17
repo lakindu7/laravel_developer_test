@@ -20,6 +20,7 @@ class CreateBusSchedulesTable extends Migration
             $table->timestamp('end_timestamp');
             $table->unsignedBigInteger('bus_route_id');
             $table->foreign('bus_route_id')->references('id')->on('bus_routes');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
