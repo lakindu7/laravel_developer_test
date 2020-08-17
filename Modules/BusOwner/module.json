@@ -1,0 +1,13 @@
+{
+    "name": "BusOwner",
+    "alias": "busowner",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\BusOwner\\Providers\\BusOwnerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
