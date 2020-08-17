@@ -19,4 +19,6 @@ Route::middleware('auth:api')->get('/bus', function (Request $request) {
 
 Route::resources([
     'buses' => 'BusController',
+    'busroutes' => 'BusRouteController',
+    'busschedules' => 'BusScheduleController'
 ]);
