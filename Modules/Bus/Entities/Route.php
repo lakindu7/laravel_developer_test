@@ -12,4 +12,9 @@ class Route extends Model
     protected $fillable = [
         'node_one', 'node_two', 'route_number', 'distance', 'time'
     ];
+
+    public function busroute()
+    {
+        return $this->hasMany(BusRoute::class,'route_id','id');
+    }
 }

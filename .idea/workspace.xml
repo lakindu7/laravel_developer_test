@@ -20,15 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ce47591-7119-4f8d-a5b8-d33ae654f48d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_developer_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_developer_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/Bus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/Bus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/BusRoute.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/BusRoute.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BusOwner/Entities/BusOwner.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BusOwner/Entities/BusOwner.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -139,6 +145,19 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/nwidart/laravel-modules" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-diactoros" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g4wkBySrplVbet0dldkWEtMUgG" />
@@ -171,12 +190,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9876eb8b-37e6-4399-a927-a8750ceb030c" name="Default Changelist" comment="" />
+      <changelist id="8ce47591-7119-4f8d-a5b8-d33ae654f48d" name="Default Changelist" comment="" />
       <created>1597387315957</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597387315957</updated>
       <workItem from="1597387345199" duration="320000" />
+      <workItem from="1597763204776" duration="2895000" />
     </task>
     <servers />
   </component>

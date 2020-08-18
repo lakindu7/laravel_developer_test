@@ -14,3 +14,8 @@
 Route::prefix('bus')->group(function() {
     Route::get('/', 'BusController@index');
 });
+
+Route::get('/test', function (){
+    $bus = \Modules\Bus\Entities\BusRoute::first();
+    dd($bus->route->busroute);
+});
