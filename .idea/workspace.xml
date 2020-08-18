@@ -21,12 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8ce47591-7119-4f8d-a5b8-d33ae654f48d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/BusOwner/Entities/BusOwner.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BusOwner/Entities/BusOwner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/BusOwner/Http/Requests/BusOwnerStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BusOwner/Http/Requests/BusOwnerStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/BusOwner/Http/Requests/BusOwnerUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BusOwner/Http/Requests/BusOwnerUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/SuperAdmin/Entities/SuperAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SuperAdmin/Entities/SuperAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/SuperAdmin/Http/Controllers/SuperAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SuperAdmin/Http/Controllers/SuperAdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/SuperAdmin/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SuperAdmin/Routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Http/Requests/BusStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Http/Requests/BusStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Entities/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Http/Controllers/UserController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,10 +198,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2056" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597739068238">
+    <state x="2056" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597739955957">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state x="2056" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1597739068238" />
+    <state x="2056" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1597739955957" />
     <state x="1989" y="227" key="search.everywhere.popup" timestamp="1597736460703">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>

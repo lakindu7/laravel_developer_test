@@ -2,9 +2,14 @@
 
 namespace Modules\User\Http\Controllers;
 
+use App\Http\Resources\ReturnResource;
+use App\Http\Resources\ReturnResourceCollection;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\User\Entities\User;
+use Modules\User\Http\Requests\UserStoreRequest;
+use Modules\User\Http\Requests\UserUpdateRequest;
 
 class UserController extends Controller
 {
@@ -14,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user::index');
+        return response()->json(new ReturnResourceCollection(User::paginate(5)),200);
     }
 
     /**
@@ -31,9 +36,9 @@ class UserController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function store(UserStoreRequest $request)
     {
-        //
+        return response()->json(new ReturnResource(User::create($request->validated())),201);
     }
 
     /**
@@ -43,7 +48,12 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        return view('user::show');
+        $user = User::find($id);
+
+        if($user){
+            return response()->json(new ReturnResource($user),200);
+        }
+        return response()->json(['error'=>'Record not found'],404);
     }
 
     /**
@@ -62,9 +72,14 @@ class UserController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(UserUpdateRequest $request, $id)
     {
-        //
+        $user = User::find($id);
+
+        if($user){
+            return response()->json($user->update($request->validated()),200);
+        }
+        return response()->json(['error'=>'Record not found'],404);
     }
 
     /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Bus\Http\Requests;
+namespace Modules\User\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BusStoreRequest extends FormRequest
+class UserStoreRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -14,10 +14,9 @@ class BusStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'=> 'required',
-            'type' => 'required',
-            'vehicle_number' => ['required','unique:buses'],
-            'owner_id' => 'required'
+            'name' => ['required','regex:/^[a-zA-Z]+(?:\s[a-zA-Z]+)+$/'],
+            'email' => ['required','email','unique:users'],
+            'password' => ['required', 'min:6','regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/', 'confirmed']
         ];
     }
 
