@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ce47591-7119-4f8d-a5b8-d33ae654f48d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Bus/Http/Requests/BusStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Http/Requests/BusStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Entities/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
