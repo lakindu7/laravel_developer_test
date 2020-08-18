@@ -14,9 +14,9 @@ class BusOwnerStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'email' => 'required',
-            'password' => 'required'
+            'name' => ['required','regex:/^[a-zA-Z]+(?:\s[a-zA-Z]+)+$/'],
+            'email' => ['required','email','unique:super_admins'],
+            'password' => ['required', 'min:6','regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/', 'confirmed']
        ];
     }
 

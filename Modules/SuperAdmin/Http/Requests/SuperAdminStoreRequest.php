@@ -1,15 +1,23 @@
 <?php
 
-namespace Modules\BusOwner\Http\Requests;
+namespace Modules\SuperAdmin\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BusOwnerUpdateRequest extends FormRequest
+class SuperAdminStoreRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
+     *
+     *
+     *      English uppercase characters (A – Z)
+     *      English lowercase characters (a – z)
+     *      Base 10 digits (0 – 9)
+     *      Non-alphanumeric (For example: !, $, #, or %)
+     *
+     *
      */
     public function rules()
     {

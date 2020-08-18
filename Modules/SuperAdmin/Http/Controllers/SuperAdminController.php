@@ -2,9 +2,14 @@
 
 namespace Modules\SuperAdmin\Http\Controllers;
 
+use App\Http\Resources\ReturnResource;
+use App\Http\Resources\ReturnResourceCollection;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\SuperAdmin\Entities\SuperAdmin;
+use Modules\SuperAdmin\Http\Requests\SuperAdminStoreRequest;
+use Modules\SuperAdmin\Http\Requests\SuperAdminUpdateRequest;
 
 class SuperAdminController extends Controller
 {
@@ -14,7 +19,7 @@ class SuperAdminController extends Controller
      */
     public function index()
     {
-        return view('superadmin::index');
+        return response()->json(new ReturnResourceCollection(SuperAdmin::paginate(5)),200);
     }
 
     /**
@@ -31,9 +36,9 @@ class SuperAdminController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function store(SuperAdminStoreRequest $request)
     {
-        //
+        return response()->json(new ReturnResource(SuperAdmin::create($request->validated())),201);
     }
 
     /**
@@ -43,7 +48,12 @@ class SuperAdminController extends Controller
      */
     public function show($id)
     {
-        return view('superadmin::show');
+        $superadmin = SuperAdmin::find($id);
+
+        if($superadmin){
+            return response()->json(new ReturnResource($superadmin),200);
+        }
+        return response()->json(['error'=>'Record not found'],404);
     }
 
     /**
@@ -62,9 +72,14 @@ class SuperAdminController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(SuperAdminUpdateRequest $request, $id)
     {
-        //
+        $superadmin = SuperAdmin::find($id);
+
+        if($superadmin){
+            return response()->json($superadmin->update($request->validated()),200);
+        }
+        return response()->json(['error'=>'Record not found'],404);
     }
 
     /**

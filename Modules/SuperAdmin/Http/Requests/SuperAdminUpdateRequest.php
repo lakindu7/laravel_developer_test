@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\BusOwner\Http\Requests;
+namespace Modules\SuperAdmin\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BusOwnerUpdateRequest extends FormRequest
+class SuperAdminUpdateRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.

@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class SuperAdmin extends Model
 {
     use SoftDeletes;
-    protected $fillable = [ 'name', 'email', 'password'];
+    protected $fillable = [ 'name', 'email', 'password',];
+
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 }

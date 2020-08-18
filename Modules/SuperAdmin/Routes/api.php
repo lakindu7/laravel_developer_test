@@ -17,25 +17,6 @@ Route::middleware('auth:api')->get('/superadmin', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('superadmin')->group(function () {
-    /*
-     * Super Admin Login Route
-     */
-    Route::get('login', function () {
-        return "hello admin";
-    });
-
-    /*
-     * Create Super Admin
-     */
-    Route::get('create', function () {
-        return "hello admin create";
-    });
-
-    /*
-     * Update Super Admin
-     */
-    Route::get('edit', function () {
-        return "hello admin edit";
-    });
-});
+Route::resources([
+    'superadmins' => 'SuperAdminController'
+]);
