@@ -2,9 +2,13 @@
 
 namespace Modules\BusOwner\Http\Controllers;
 
+use App\Http\Resources\ReturnResource;
+use App\Http\Resources\ReturnResourceCollection;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\BusOwner\Entities\BusOwner;
+use Modules\BusOwner\Http\Requests\BusOwnerStoreRequest;
 
 class BusOwnerController extends Controller
 {
@@ -14,7 +18,7 @@ class BusOwnerController extends Controller
      */
     public function index()
     {
-        return view('busowner::index');
+        return response()->json(new ReturnResourceCollection(BusOwner::paginate(5)),200);
     }
 
     /**
@@ -31,9 +35,9 @@ class BusOwnerController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function store(BusOwnerStoreRequest $request)
     {
-        //
+        return response()->json(new ReturnResource(BusOwner::create($request->validated())),201);
     }
 
     /**
@@ -43,7 +47,12 @@ class BusOwnerController extends Controller
      */
     public function show($id)
     {
-        return view('busowner::show');
+        $busowner = BusOwner::find($id);
+
+        if($busowner){
+            return response()->json(new ReturnResource($busowner),200);
+        }
+        return response()->json(['error'=>'Record not found'],404);
     }
 
     /**
@@ -64,7 +73,12 @@ class BusOwnerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $busowner = BusOwner::find($id);
+
+        if($busowner){
+            return response()->json($busowner->update($request->validated()),200);
+        }
+        return response()->json(['error'=>'Record not found'],404);
     }
 
     /**
