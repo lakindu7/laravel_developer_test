@@ -20,5 +20,8 @@ Route::middleware('auth:api')->get('/bus', function (Request $request) {
 Route::resources([
     'buses' => 'BusController',
     'busroutes' => 'BusRouteController',
-    'busschedules' => 'BusScheduleController'
+    'busschedules' => 'BusScheduleController',
+    'busschedulebookings' => 'BusScheduleBookingController',
+    'busseats' => 'BusSeatController',
+    'routes' => 'RouteController'
 ]);
