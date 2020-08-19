@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ce47591-7119-4f8d-a5b8-d33ae654f48d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel_developer_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_developer_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/Bus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/Bus.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/BusRoute.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/BusRoute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/BusSchedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/BusSchedule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/BusScheduleBooking.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/BusScheduleBooking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Bus/Entities/BusSeat.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Entities/BusSeat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Bus/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Bus/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/BusOwner/Entities/BusOwner.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BusOwner/Entities/BusOwner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/BusOwner/Http/Controllers/BusOwnerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/BusOwner/Http/Controllers/BusOwnerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Entities/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -145,6 +149,15 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/nwidart/laravel-modules" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/vendor/league/event" />
       <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
       <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
@@ -168,6 +181,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -197,6 +211,9 @@
       <updated>1597387315957</updated>
       <workItem from="1597387345199" duration="320000" />
       <workItem from="1597763204776" duration="2895000" />
+      <workItem from="1597815394315" duration="586000" />
+      <workItem from="1597847654809" duration="36000" />
+      <workItem from="1597851273778" duration="775000" />
     </task>
     <servers />
   </component>
@@ -220,9 +237,9 @@
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
     <state x="2056" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1597739955957" />
-    <state x="1989" y="227" key="search.everywhere.popup" timestamp="1597736460703">
+    <state x="1989" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597851357986">
       <screen x="1366" y="0" width="1920" height="1050" />
     </state>
-    <state x="1989" y="227" key="search.everywhere.popup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1597736460703" />
+    <state x="1989" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1920.1050@1366.0.1920.1050" timestamp="1597851357986" />
   </component>
 </project>

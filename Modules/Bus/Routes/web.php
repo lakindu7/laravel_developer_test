@@ -16,6 +16,6 @@ Route::prefix('bus')->group(function() {
 });
 
 Route::get('/test', function (){
-    $bus = \Modules\Bus\Entities\BusRoute::first();
-    dd($bus->route->busroute);
+    $bus = \Modules\Bus\Entities\BusScheduleBooking::first();
+    dd($bus->busschedule);
 });

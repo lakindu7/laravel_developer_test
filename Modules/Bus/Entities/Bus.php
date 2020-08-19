@@ -23,4 +23,9 @@ class Bus extends Model
     {
         return $this->hasOne(BusOwner::class,'id','owner_id');
     }
+
+    public function busseat()
+    {
+        return $this->hasMany(BusSeat::class,'bus_id','id');
+    }
 }

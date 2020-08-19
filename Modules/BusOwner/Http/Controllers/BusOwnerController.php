@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\BusOwner\Entities\BusOwner;
 use Modules\BusOwner\Http\Requests\BusOwnerStoreRequest;
+use Modules\BusOwner\Http\Requests\BusOwnerUpdateRequest;
 
 class BusOwnerController extends Controller
 {
@@ -71,7 +72,7 @@ class BusOwnerController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(BusOwnerUpdateRequest $request, $id)
     {
         $busowner = BusOwner::find($id);
 

@@ -11,4 +11,14 @@ class BusSchedule extends Model
     protected $fillable = [
         'direction', 'start_timestamp', 'end_timestamp', 'bus_route_id'
     ];
+
+    public function busroute()
+    {
+        return $this->hasOne(BusRoute::class,'id','bus_route_id');
+    }
+
+    public function busschedulebooking()
+    {
+        return $this->hasOne(BusScheduleBooking::class,'bus_schedule_id','id');
+    }
 }
