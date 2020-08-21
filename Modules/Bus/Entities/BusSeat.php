@@ -13,11 +13,17 @@ class BusSeat extends Model
         'seat_number', 'price', 'bus_id'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function bus()
     {
         return $this->hasOne(Bus::class,'id','bus_id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function busschedulebooking()
     {
         return $this->hasOne(BusScheduleBooking::class,'bus_seat_id','id');

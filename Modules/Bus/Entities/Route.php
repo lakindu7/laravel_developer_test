@@ -13,6 +13,9 @@ class Route extends Model
         'node_one', 'node_two', 'route_number', 'distance', 'time'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function busroute()
     {
         return $this->hasMany(BusRoute::class,'route_id','id');

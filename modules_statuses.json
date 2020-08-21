@@ -2,5 +2,6 @@
     "SuperAdmin": true,
     "BusOwner": true,
     "User": true,
-    "Bus": true
+    "Bus": true,
+    "Users": true
 }

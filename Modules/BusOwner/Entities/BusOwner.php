@@ -17,6 +17,9 @@ class BusOwner extends Model
         'password', 'remember_token',
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function buses()
     {
         return $this->hasMany(Bus::class,'owner_id','id');

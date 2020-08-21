@@ -14,16 +14,31 @@ class Bus extends Model
         'name', 'type', 'vehicle_number', 'owner_id'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     *
+     *  This returns Route details of Bus
+     */
     public function busroute()
     {
         return $this->hasOne(BusRoute::class,'bus_id','id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     *
+     * This return Owner details of Bus
+     */
     public function busowner()
     {
         return $this->hasOne(BusOwner::class,'id','owner_id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     *
+     * This returns seat details of Bus
+     */
     public function busseat()
     {
         return $this->hasMany(BusSeat::class,'bus_id','id');
